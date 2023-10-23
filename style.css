@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    background-color: #4ea9d3;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para fazer todas as imagens quadradas, exceto logotipos */
+img:not(.logo) {
+    width: 75%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+    height: auto; /* Permite que a altura seja ajustada automaticamente */
+    max-width: 100%; /* Evita que as imagens se estendam além do contêiner */
+}
+
+/* Estilos para o logotipo no header e no footer */
+#site-header .logo img,
+#site-footer .logo img {
+    width: 35%; /* Mantém a largura original do logotipo */
+    height: auto; /* Mantém a altura original do logotipo */
+    max-width: none; /* Remove a limitação de largura máxima */
+    max-height: none; /* Remove a limitação de altura máxima */
+}
+
+
+#site-header {
+    background-color: #de933b; /* Cor de fundo do header */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
+    top: 0;
+    border-radius: 0 0 10% 10%;
+    z-index: 1;
+}
+
+#site-header .logo {
+    margin: 0;
+}
+
+#site-header .logo img {
+    max-width: 75%;
+    height: auto;
+}
+
+#site-header .menu-icon {
+    display: none; /* Oculta o ícone do menu no PC e Tablet */
+}
+
+#site-header .menuu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+#site-header .menuu li {
+    margin-right: 20px;
+}
+
+#site-header .menuu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#site-header .menuu a:hover {
+    color: #4ea9d3; /* Cor alternativa quando hover */
+}
+
+#home{
+    margin-top: 100px;
+}
+
+section {
+    margin: 50px 0;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+/* ... (seu CSS existente) */
+
+/* Estilos para a seção hero */
+.hero {
+    position: relative;
+    width: 97%;
+    height: 300px; /* Ajuste a altura da seção conforme necessário */
+    overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.hero-image img {
+    object-fit: cover; /* Redimensiona a imagem para preencher todo o espaço */
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    text-align: left; /* Alinhe o texto à esquerda */
+    padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
+}
+
+/* ... (seu CSS existente) */
+
+input::placeholder, textarea::placeholder {
+    color: #de933b;
+    font-weight: bolder;
+}
+
+section #whywe {
+    text-align: center;
+}
+
+.why img {
+    max-width: 75%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+section .service {
+    padding: 10px 0 0 10px;
+    text-align: center;
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* Estilos para as estrelas */
+.estrelas {
+    font-size: 24px;
+    color: #de933b;
+    cursor: pointer;
+}
+
+.estrelas-avaliacao {
+    font-size: 24px;
+    color: #fdd835; /* Cor das estrelas selecionadas (amarelo) */
+}
+
+.faq .resposta {
+    display: none;
+    /* As respostas ficarão ocultas por padrão */
+}
+
+.faq .pergunta-titulo {
+    cursor: pointer;
+    /* O ponteiro do mouse muda para um ícone de mão ao passar sobre as perguntas */
+    transition: transform 0.3s;
+    font-size: medium;
+}
+
+.faq .pergunta-titulo.clicada {
+    transform: translateX(20px); /* Altere a distância conforme necessário */
+}
+/* Estilos para a seção "contact" */
+#contact {
+    display: flex; /* Faz as divs ficarem lado a lado */
+    flex-direction: row; /* Disposição em linha (padrão) */
+    flex-wrap: nowrap; /* Evita quebras de linha */
+    justify-content: space-between; /* Distribui o espaço entre as divs */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.contacte {
+    flex: 70%; /* A primeira div (contacte) ocupa 70% do espaço disponível */
+    padding: 20px;
+}
+
+.horario {
+    flex: 30%; /* A segunda div (horario) ocupa 30% do espaço disponível */
+    padding: 20px;
+}
+
+/* Estilos para o formulário de contato e botão do WhatsApp (dentro da div contacte) */
+.contacte form {
+        max-width: 500px; /* Define a largura máxima do formulário */
+        padding: 20px;
+        border-radius: 5px;
+}
+
+input{
+    border: 1px solid #ccc;
+}
+
+label, input, textarea {
+    width: 90%; /* Define a largura máxima para ocupar todo o espaço do formulário */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: #de933b;
+    font-weight: bolder;
+}
+
+button {
+    background-color: #de933b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para o botão do WhatsApp */
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-whatsapp i {
+    margin-right: 10px;
+}
+
+.botao-whatsapp:hover {
+    background-color: #128C7E; /* Cor alternativa quando hover */
+}
+
+
+
+/* Estilos para o footer */
+.footer {
+    background-color: #de933b;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer .redes-sociais h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .redes-sociais ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .redes-sociais li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer .redes-sociais a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilize os ícones das redes sociais conforme necessário */
+
+
+
+@media screen and (max-width: 600px) {
+    /* Estilos específicos para telefones */
+
+    #site-header .logo img,
+#site-footer .logo img {
+    width: 60%; /* Mantém a largura original do logotipo */
+    height: auto; /* Mantém a altura original do logotipo */
+    max-width: none; /* Remove a limitação de largura máxima */
+    max-height: none; /* Remove a limitação de altura máxima */
+}
+
+    #site-header .menuu {
+        display: none; /* Oculta o menu no mobile por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #de933b;
+        padding: 10px;
+        width: 50%;
+    }
+
+    #site-header .menu-icon {
+        display: block; /* Exibe o ícone do menu no mobile */
+        font-size: 24px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    #site-header .menu-icon.open {
+        background-color: #de933b;
+        color: #fff;
+    }
+
+    /* Estilos para o menu hamburguer quando aberto */
+    #site-header .menu-icon.open + .menuu {
+        display: block; /* Exibe o menu quando o ícone do menu está aberto */
+    }
+    .hero {
+        position: relative;
+        width: 93%;
+        height: 300px; /* Ajuste a altura da seção conforme necessário */
+        overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos específicos para tablets */
+    header {
+        padding: 20px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+#home{
+    padding: 50px 0 0 0;
+}
+@media screen and (min-width: 1025px) {
+    section {
+        padding: 80px 20px;
+        border-radius: 5px;
+        
+    }
+    #home{
+        padding: 0 20px;
+    }
+    .hero-content h2 {
+        font-size: 5em;
+    }
+    .logo img{
+        width: 25%;
+        height: auto;
+    }
+    .why {
+        display: inline-block; /* Define as divs de serviços como elementos em linha */
+        width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
+        margin: 1%; /* Adiciona uma pequena margem entre as divs */
+        text-align: center; /* Centraliza o conteúdo dentro das divs */
+        padding: 10px;
+    }
+
+    .why img {
+        max-width: 100%;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 15%;
+    }
+
+    .service {
+        display: inline-block; /* Define as divs de serviços como elementos em linha */
+        width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
+        margin: 1%; /* Adiciona uma pequena margem entre as divs */
+        text-align: center; /* Centraliza o conteúdo dentro das divs */
+        padding: 10px;
+    }
+
+    .service img {
+        max-width: 100%;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 15%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+    #contact{
+        display: flex;
+    }
+    #contact .contacte{
+        width: 70%;
+    }
+    .contacte #name, #email{
+        width: 45%;
+    }
+    .contacte #message{
+        width: 100%;
+        height: 100px;
+    }
+    .contacte input::placeholder{
+        color: black;
+    }
+}
