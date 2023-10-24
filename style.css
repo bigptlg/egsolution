@@ -132,7 +132,9 @@ section {
     padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
 }
 
-/* ... (seu CSS existente) */
+input, textarea{
+    color:black;
+}
 
 input::placeholder, textarea::placeholder {
     color: #de933b;
