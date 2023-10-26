@@ -353,6 +353,14 @@ button {
         height: 300px; /* Ajuste a altura da seção conforme necessário */
         overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
     }
+    .why img {
+    max-width: 35%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -364,9 +372,17 @@ button {
         display: block;
         margin: 10px 0;
     }
-}
-#home{
-    padding: 50px 0 0 0;
+    #home{
+        padding: 50px 0 0 0;
+    }
+    .why img {
+        max-width: 50%;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 15%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
 }
 @media screen and (min-width: 1025px) {
     section {
