@@ -141,7 +141,7 @@ input::placeholder, textarea::placeholder {
     font-weight: bolder;
 }
 
-section #why {    
+section .why {    
     padding: 10px 0 0 10px;
     text-align: center;
 }
@@ -161,7 +161,7 @@ section .service {
 }
 
 .service img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     border: 5px solid white;
     border-radius: 15%;
@@ -362,6 +362,14 @@ button {
     object-fit: cover;
     aspect-ratio: 1 / 1;
     }
+    .service img {
+    max-width: 50%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -384,6 +392,14 @@ button {
         object-fit: cover;
         aspect-ratio: 1 / 1;
     }
+    .service img {
+    max-width: 50%;
+    height: auto;
+    border: 5px solid white;
+    border-radius: 15%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
 }
 @media screen and (min-width: 1025px) {
     section {
