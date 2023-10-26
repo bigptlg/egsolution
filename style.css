@@ -141,7 +141,8 @@ input::placeholder, textarea::placeholder {
     font-weight: bolder;
 }
 
-section #whywe {
+section #whywe {    
+    padding: 10px 0 0 10px;
     text-align: center;
 }
 
