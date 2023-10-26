@@ -141,7 +141,7 @@ input::placeholder, textarea::placeholder {
     font-weight: bolder;
 }
 
-section #whywe {    
+section #why {    
     padding: 10px 0 0 10px;
     text-align: center;
 }
@@ -355,7 +355,7 @@ button {
         overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
     }
     .why img {
-    max-width: 35%;
+    max-width: 50%;
     height: auto;
     border: 5px solid white;
     border-radius: 15%;
