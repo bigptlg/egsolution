@@ -326,7 +326,7 @@ button {
     }
 
     .why img {
-        max-width: calc(50% - 0px);
+        max-width: calc(65% - 0px);
         height: auto;
         border: 5px solid white;
         border-radius: calc(15% + 0px);
@@ -335,7 +335,7 @@ button {
     }
 
     .service img {
-        max-width: calc(50% - 0px);
+        max-width: calc(65% - 0px);
         height: auto;
         border: 5px solid white;
         border-radius: calc(15% + 0px);
@@ -359,7 +359,7 @@ button {
     }
 
     .why img {
-        max-width: calc(50% - 0px);
+        max-width: calc(65% - 0px);
         height: auto;
         border: 5px solid white;
         border-radius: calc(15% + 0px);
@@ -368,7 +368,7 @@ button {
     }
 
     .service img {
-        max-width: calc(50% - 0px);
+        max-width: calc(65% - 0px);
         height: auto;
         border: 5px solid white;
         border-radius: calc(15% + 0px);
