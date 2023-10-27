@@ -160,7 +160,7 @@ section .service {
 .estrelas {
     font-size: 24px;
     color: #de933b;
-    cursor: pointer;
+    cursor: url('cursor.cur'), auto;
 }
 
 .estrelas-avaliacao {
@@ -173,7 +173,7 @@ section .service {
 }
 
 .faq .pergunta-titulo {
-    cursor: pointer;
+    cursor: url('cursor.cur'), auto;
     transition: transform 0.3s;
     font-size: medium;
 }
@@ -227,7 +227,7 @@ button {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    cursor: pointer;
+    cursor: url('cursor.cur'), auto;
 }
 
 .botao-whatsapp {
@@ -311,7 +311,7 @@ button {
     #site-header .menu-icon {
         display: block;
         font-size: 24px;
-        cursor: pointer;
+        cursor: url('cursor.cur'), auto;
         color: #fff;
     }
 
