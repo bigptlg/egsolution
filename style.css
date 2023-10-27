@@ -67,7 +67,7 @@ img:not(.logo) {
 #site-header .menuu a:hover {
     color: #4ea9d3;
     cursor: url('cursor.cur'), auto;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 #home {
@@ -248,7 +248,7 @@ button {
 .botao-whatsapp:hover {
     background-color: #128C7E;
     cursor: url('cursor.cur'), auto;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .footer {
