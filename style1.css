@@ -151,7 +151,7 @@ img:not(.logo) {
 }
 
 #home1{
-    margin: 5% 0 -8% 0;
+    margin-top: 20px;
 }
 
 
@@ -265,6 +265,12 @@ section .why {
     border-radius: calc(15% + 0px); /* Utilizando calc para o raio da borda */
     object-fit: cover;
     aspect-ratio: 1 / 1;
+}
+
+.preco {
+    background-color: none;
+    border: 2px solid #fff;
+    margin: 3% 0;
 }
 
 section .service {
