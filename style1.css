@@ -151,7 +151,7 @@ img:not(.logo) {
 }
 
 #home1{
-    margin-top: 20px;
+    margin: 5% 0 -8% 0;
 }
 
 
@@ -249,7 +249,7 @@ section .why {
 }
 
 .tarifa {
-    max-width: 25%;
+    max-width: 50%;
     text-align: center;
 }
 
@@ -267,12 +267,6 @@ section .why {
     aspect-ratio: 1 / 1;
 }
 
-.preco {
-    background-color: none;
-    border: 2px solid #fff;
-    margin: 3% 0;
-}
-
 section .service {
     margin: 10% 0 0 10px;
     text-align: center;
@@ -287,7 +281,7 @@ section .service {
     aspect-ratio: 1 / 1;
 }
 
-.service img:hover{
+a img:hover{
     transform: scale(1.1);
 }
 

@@ -49,10 +49,17 @@
         <div class="menu-icon">&#9776;</div> <!-- Ícone do menu hamburguer -->
         <nav class="menuu">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#whywe">Porquê nós</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="index.html">Início</a></li><!--
+                <li><a href="#whywe">Porquê nós</a></li>-->
+                <li><a href="#services">Serviços</a>
+                    <ul class="submenu">
+                        <li><a href="gps.html">GPS</a></li>
+                        <li><a href="alarme.html">Alarme Veicular</a></li>
+                        <li><a href="cctv.html">CCTV</a></li>
+                        <li><a href="ti.html">Redes de TI</a></li>
+                    </ul>
+                </li><!--
+                <li><a href="#contact">Contato</a></li>-->
             </ul>
         </nav>
     </header>
@@ -115,34 +122,37 @@
                 <img src="4camera.jpg" alt="Kit">
             <h3>Kit de 4 Câmeras</h3>
             <p>O kit de 4 câmeras de vigilância é a escolha ideal para proteger propriedades menores, como residências e pequenos estabelecimentos comerciais. Com quatro câmeras de alta resolução, você pode monitorar áreas-chave de sua propriedade, garantindo segurança e tranquilidade. Esse kit oferece uma solução acessível e eficaz para manter sua propriedade protegida.</p>
-            <button><a href="https://api.whatsapp.com/send?phone=244948558954&text=Tenho+interesse+no+Kit+de+4+c%C3%A2meras">235.000kz</a></button>
+            <button><a href="https://api.whatsapp.com/send?phone=244948558954&text=Ol%C3%A1%21+Desejo+adquirir+o+kit+de+4+c%C3%A2meras.">235.000kz</a></button>
         </div>
         <div class="tarifa">
             <img src="camera.jpg" alt="Kit">
             <h3>Kit de 8 Câmeras</h3>
             <p>O kit de 8 câmeras de vigilância é uma opção intermediária, perfeita para propriedades maiores ou que requerem uma cobertura mais ampla. Com oito câmeras de alta qualidade, você pode monitorar várias áreas simultaneamente, garantindo uma vigilância abrangente. Ideal para residências maiores, pequenos negócios e escritórios.</p>
-            <button><a href="https://api.whatsapp.com/send?phone=244948558954&text=Tenho+interesse+no+Kit+de+8+c%C3%A2meras">435.000kz</a></button>
+            <button><a href="https://api.whatsapp.com/send?phone=244948558954&text=Ol%C3%A1%21+Desejo+adquirir+o+kit+de+8+c%C3%A2meras.">435.000kz</a></button>
         </div>
         <div class="tarifa">
             <img src="16camera.jpg" alt="Kit">
             <h3>Kit de 16 Câmeras</h3>
             <p>O kit de 16 câmeras de vigilância é a escolha premium para propriedades grandes ou locais que exigem uma segurança intensiva. Com dezesseis câmeras de alta resolução, você pode monitorar uma ampla gama de áreas, assegurando a máxima proteção. Esse kit é ideal para empresas de médio a grande porte, instalações industriais e propriedades extensas que exigem vigilância constante e detalhada.</p>
-            <button class="preco"><a href="https://api.whatsapp.com/send?phone=244948558954&text=Tenho+interesse+no+Kit+de+16+c%C3%A2meras">645.000kz</a></button>
+            <button class="preco"><a href="https://api.whatsapp.com/send?phone=244948558954&text=Ol%C3%A1%21+Desejo+adquirir+o+kit+de+16+c%C3%A2meras.">645.000kz</a></button>
         </div>
     </article>
     </section>
 
     <section id="services">
         <h2>Nossos Serviços</h2>
+        <article>
         <div class="service">
-            <img src="gps_instalacao.jpeg" alt="Instalação de GPS Veicular">
+            <a href="gps.html"><img src="gps_instalacao.jpeg" alt="Instalação de GPS Veicular"></a>
             <h3>Instalação de GPS Veicular</h3>
             <p>A instalação de GPS veicular é a solução ideal para quem busca segurança e controle sobre seus veículos. Com um GPS instalado, você pode saber sempre onde seu carro, moto ou outro veículo está.</p>
+            <button><a href="gps.html">Saiba mais</a></button>
         </div>
         <div class="service">
-            <img src="alarme_instalacao.jpeg" alt="Instalação de Alarme Veicular">
+            <a href="alarme.html"><img src="alarme_instalacao.jpeg" alt="Instalação de Alarme Veicular"></a>
             <h3>Instalação de Alarme Veicular</h3>
             <p>A instalação de alarme veicular é a solução ideal para quem busca proteção contra roubos e furtos. Com um alarme instalado, você pode evitar que seu veículo seja levado.</p>
+            <button><a href="alarme.html">Saiba mais</a></button>
         </div>
         <div class="service">
             <a href="cctv.html"><img src="cctv.jpeg" alt="Montagem de CCTV"></a>
@@ -151,17 +161,18 @@
             <button><a href="cctv.html">Saiba mais</a></button>
         </div>
         <div class="service">
-            <img src="redes_ti.jpeg" alt="Montagem de Redes de TI">
+            <a href="ti.html"><img src="redes_ti.jpeg" alt="Montagem de Redes de TI"></a>
             <h3>Montagem de Redes de TI</h3>
             <p>A montagem de redes de TI é a solução ideal para quem busca conectividade e segurança de dados. Com uma rede de TI instalada, você pode conectar seus dispositivos e compartilhar dados de forma segura.</p>
-        </div>
+            <button><a href="ti.html">Saiba mais</a></button>
+        </div></article>
     </section>
 
 
-    <section class="faq">
+    <!--<section class="faq">
         <h2>Perguntas Frequentes</h2>
         <div class="pergunta">
-            <h3 class="pergunta-titulo">► Quantas câmeras são necessárias para cobrir minha propriedade de maneira eficaz?</h3>
+            <h3 class="pergunta-titulo">► O que fazer em caso de erro ou falha?</h3>
             <p class="resposta">
                 Você pode entrar em contacto connosco por meio do nosso formulário de contacto em nosso site. Além disso, você pode nos ligar pelo número de telefone listado na seção "Contactos".
             </p>
@@ -179,7 +190,7 @@
             <p class="resposta">Entre em contato com a empresa de instalação imediatamente. Eles devem oferecer suporte técnico e serviços de reparo para resolver qualquer problema.</p>
         </div>
         <!-- Adicione mais perguntas e respostas conforme necessário -->
-    </section>
+    </section>-->
 
     <section id="contact">
         <div class="contacte">

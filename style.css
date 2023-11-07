@@ -13,6 +13,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    cursor:  url('cursor.cur'), auto;
+}
+
 /* Estilos para fazer todas as imagens quadradas, exceto logotipos */
 img:not(.logo) {
     width: 75%; /* Garante que a imagem ocupe 100% da largura do contêiner */
@@ -30,6 +34,7 @@ img:not(.logo) {
 }
 
 
+/* Estilos para o header */
 #site-header {
     background-color: #de933b; /* Cor de fundo do header */
     padding: 10px 0;
@@ -57,6 +62,7 @@ img:not(.logo) {
     display: none; /* Oculta o ícone do menu no PC e Tablet */
 }
 
+/* Estilos para o menu principal e submenu */
 #site-header .menuu ul {
     list-style: none;
     padding: 0;
@@ -65,6 +71,7 @@ img:not(.logo) {
 
 #site-header .menuu li {
     margin-right: 20px;
+    position: relative; /* Para o submenu */
 }
 
 #site-header .menuu a {
@@ -77,6 +84,34 @@ img:not(.logo) {
 #site-header .menuu a:hover {
     color: #4ea9d3; /* Cor alternativa quando hover */
 }
+
+/* Estilos para o submenu */
+#site-header .menuu .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #de933b;
+    display: none;
+    border-radius: 5%;
+}
+
+#site-header .menuu li:hover .submenu {
+    display: block;
+}
+
+#site-header .submenu li {
+    margin: 0;
+}
+
+#site-header .submenu a {
+    color: #333; /* Cor do texto do submenu */
+    font-weight: normal;
+}
+
+#site-header .submenu a:hover {
+    color: #4ea9d3; /* Cor alternativa quando hover no submenu */
+}
+
 
 * {
     margin: 0;
@@ -210,6 +245,23 @@ input::placeholder, textarea::placeholder {
     font-weight: bolder;
 }
 
+.sobre {
+    width: 97%;
+    text-align: center;
+    margin: auto;
+}
+
+.sobre img{
+    width: auto;
+    border-radius: 20%;
+    border: 5px solid white;
+    margin: 0 0 10% 0;
+}
+
+.sobre p{
+    padding: 0 0 5% 3%;
+}
+
 .vantagens {
     width: 97%;
     /*text-align: center;*/
@@ -219,6 +271,7 @@ input::placeholder, textarea::placeholder {
 .vantagens img{
     width: auto;
     border-radius: 20%;
+    border: 5px solid white;
     margin: 0 0 10% 0;
 }
 
@@ -267,8 +320,15 @@ section .why {
     aspect-ratio: 1 / 1;
 }
 
+.tarifa  ul {
+    padding-left: 0;
+  }
+.tarifa li {
+    list-style-position: inside;
+    text-align: center;
+  }
+
 section .service {
-    margin: 10% 0 0 10px;
     text-align: center;
 }
 
@@ -475,6 +535,7 @@ button:hover{
     
     #home .texto{
         padding: 5%;
+        width: 40%;
     }
     
     #home h1{
@@ -487,12 +548,13 @@ button:hover{
 
     #home .foto{
         padding: 5%;
-        width: 90%;
     }
     
     .foto img{
         width:100%;
         border-radius: 10%;
+        border: 5px solid white;
+        aspect-ratio: 1 / 1;
     }
     
     .hero {
@@ -539,9 +601,10 @@ button:hover{
         margin-top: 100px;
         text-align: center;
         }
-    
+
     #home .texto{
-        padding: 5%;
+        width: 100%;
+        padding: 0;
     }
     
     #home h1{
@@ -559,6 +622,7 @@ button:hover{
     .foto img{
         width:100%;
         border-radius: 10%;
+        border: 5px solid white;
     }
     
 
@@ -605,10 +669,11 @@ button:hover{
     
     #home .texto{
         padding: 5%;
+        width: 80%;
     }
     
     #home h1{
-        font-size: 65px;
+        font-size: 45px;
     }
     
     #home p{
@@ -623,6 +688,7 @@ button:hover{
     .foto img{
         width:100%;
         border-radius: 10%;
+        border: 5px solid white;
     }
     
     .hero-content h2 {
@@ -987,7 +1053,7 @@ button {
         border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
     }
     
-
+    
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -1039,6 +1105,12 @@ button {
         width: 75%;
     }
 
+
+#services article{
+    display: flex;
+    justify-content: center;
+}
+
     .service {
         display: inline-block; /* Define as divs de serviços como elementos em linha */
         width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
@@ -1066,20 +1138,29 @@ button {
         object-fit: cover;
         aspect-ratio: 1 / 1;
     }
+
     #contact{
         display: flex;
     }
+
     #contact .contacte{
         width: 70%;
     }
+
     .contacte #name, #email{
         width: 45%;
     }
+
     .contacte #message{
         width: 100%;
         height: 100px;
     }
+
     .contacte input::placeholder{
         color: black;
+    }
+
+    section{
+        margin: 0 5%;
     }
 }
