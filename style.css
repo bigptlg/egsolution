@@ -765,9 +765,6 @@ section {
     
 }
 
-/* ... (seu CSS existente) */
-
-/* Estilos para a seção hero */
 .hero {
     position: relative;
     width: 97%;
@@ -1082,6 +1079,11 @@ button {
     #home{
         padding: 0 20px;
     }
+
+    #home1{
+        margin: 10% 0% 0% 0%;
+    }
+    
     .hero-content h2 {
         font-size: 5em;
     }
