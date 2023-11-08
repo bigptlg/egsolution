@@ -25,8 +25,8 @@ img:not(.logo) {
 }
 
 /* Estilos para o logotipo no header e no footer */
-#site-header .logo img,
-#site-footer .logo img {
+header .logo img,
+footer .logo img {
     width: 35%; /* Mantém a largura original do logotipo */
     height: auto; /* Mantém a altura original do logotipo */
     max-width: none; /* Remove a limitação de largura máxima */
@@ -35,7 +35,7 @@ img:not(.logo) {
 
 
 /* Estilos para o header */
-#site-header {
+header {
     background-color: #de933b; /* Cor de fundo do header */
     padding: 10px 0;
     display: flex;
@@ -43,50 +43,50 @@ img:not(.logo) {
     align-items: center;
     position: fixed;
     width: 100%;
-    transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
+    transition: top 0.5s; /* Adiciona uma transição suave para o topo do header */
     top: 0;
     border-radius: 0 0 10% 10%;
     z-index: 1;
 }
 
-#site-header .logo {
+header .logo {
     margin: 0;
 }
 
-#site-header .logo img {
+header .logo img {
     max-width: 75%;
     height: auto;
 }
 
-#site-header .menu-icon {
+header .menu-icon {
     display: none; /* Oculta o ícone do menu no PC e Tablet */
 }
 
 /* Estilos para o menu principal e submenu */
-#site-header .menuu ul {
+header .menuu ul {
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-#site-header .menuu li {
+header .menuu li {
     margin-right: 20px;
     position: relative; /* Para o submenu */
 }
 
-#site-header .menuu a {
+header .menuu a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-#site-header .menuu a:hover {
+header .menuu a:hover {
     color: #4ea9d3; /* Cor alternativa quando hover */
 }
 
 /* Estilos para o submenu */
-#site-header .menuu .submenu {
+header .menuu .submenu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -95,32 +95,27 @@ img:not(.logo) {
     border-radius: 5%;
 }
 
-#site-header .menuu li:hover .submenu {
+header .menuu li:hover .submenu {
     display: block;
 }
 
-#site-header .submenu li {
+header .submenu li {
     margin: 0;
 }
 
-#site-header .submenu a {
+header .submenu a {
     color: #333; /* Cor do texto do submenu */
     font-weight: normal;
 }
 
-#site-header .submenu a:hover {
+header .submenu a:hover {
     color: #4ea9d3; /* Cor alternativa quando hover no submenu */
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-}
 .cursor-pointer:hover {
     cursor: url('cursor.cur'), auto;
         }
+
 .direito {
     font-size: small;
 }
@@ -136,15 +131,14 @@ img:not(.logo) {
     max-width: 100%;
 }
 
-#site-header .logo img,
-#site-footer .logo img {
+header .logo img, footer .logo img {
     width: calc(35% - 0px); /* Utilizando calc para a largura */
     height: auto;
     max-width: none;
     max-height: none;
 }
 
-#site-header {
+header {
     background-color: #de933b;
     padding: 10px 0;
     display: flex;
@@ -158,32 +152,31 @@ img:not(.logo) {
     z-index: 1;
 }
 
-#site-header .menu-icon {
+header .menu-icon {
     display: none;
 }
 
-#site-header .menuu ul {
+header .menuu ul {
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-#site-header .menuu li {
+header .menuu li {
     margin-right: 20px;
 }
 
-#site-header .menuu a {
+header .menuu a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-#site-header .menuu a:hover {
+header .menuu a:hover {
     color: #4ea9d3;
     cursor: url('cursor.cur'), auto;
     transform: scale(1.1);
-    transition: top 0.3s;
 }
 
 section {
@@ -200,9 +193,9 @@ section {
 }
 
 .hero-image {
-    position: relative;
-    /*top: 0;
-    left: 0;*/
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -210,7 +203,7 @@ section {
 
 .hero-image img {
     object-fit: cover;
-    width: 95%;
+    width: 100%;
     height: 100%;
 }
 
@@ -222,7 +215,7 @@ section {
     height: 100%;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(7, 116, 241, 0.514);
     color: #fff;
 }
 
@@ -298,11 +291,11 @@ section .why {
 }
 
 .tarifa {
-    max-width: 25%;
+    max-width: 100%;
     text-align: center;
 }
 
-#tarifa div{
+.tarifa{
     margin: 5% 0;
     text-align: center;
 }
@@ -324,8 +317,9 @@ section .why {
     text-align: center;
   }
 
-section .service {
+.service {
     text-align: center;
+    margin-top: 3%;
 }
 
 .service img {
@@ -339,7 +333,7 @@ section .service {
 
 .service img:hover{
     transform: scale(1.1);
-    transition: top 0.3s;
+    transition: 0.8s;
 }
 
 .service h3{
@@ -426,7 +420,6 @@ button {
 
 button:hover{
     transform: scale(1.1);
-    transition: top 0.3s;
 }
 
 .botao-whatsapp {
@@ -448,7 +441,6 @@ button:hover{
     background-color: #128C7E;
     cursor: url('cursor.cur'), auto;
     transform: scale(1.1);
-    transition: top 0.3s;
 }
 
 .footer {
@@ -489,15 +481,14 @@ button:hover{
 }
 
 @media screen and (max-width: 600px) {
-    #site-header .logo img,
-    #site-footer .logo img {
+    header .logo img, footer .logo img {
         width: calc(60% - 0px);
         height: auto;
         max-width: none;
         max-height: none;
     }
 
-    #site-header .menuu {
+    header .menuu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -508,19 +499,19 @@ button:hover{
         width: 50%;
     }
 
-    #site-header .menu-icon {
+    header .menu-icon {
         display: block;
         font-size: 24px;
         cursor: url('cursor.cur'), auto;
         color: #fff;
     }
 
-    #site-header .menu-icon.open {
+    header .menu-icon.open {
         background-color: #de933b;
         color: #fff;
     }
 
-    #site-header .menu-icon.open + .menuu {
+    header .menu-icon.open + .menuu {
         display: block;
     }
 
@@ -532,7 +523,7 @@ button:hover{
         text-align: center;
         }
     
-    #home .texto{
+    .texto{
         padding: 5%;
         width: 40%;
     }
@@ -545,7 +536,7 @@ button:hover{
         font-size: 20px;
     }
 
-    #home .foto{
+    .foto{
         padding: 5%;
     }
     
@@ -601,7 +592,7 @@ button:hover{
         text-align: center;
         }
 
-    #home .texto{
+    .texto{
         width: 100%;
         padding: 0;
     }
@@ -614,7 +605,7 @@ button:hover{
         font-size: 25px;
     }
     
-    #home .foto{
+    .foto{
         padding: 5%;
     }
     
@@ -651,6 +642,7 @@ button:hover{
 }
 
 @media screen and (min-width: 1025px) {
+    
     section {
         padding: 80px 20px;
         border-radius: calc(5px + 0px);
@@ -666,7 +658,7 @@ button:hover{
         justify-content: center;
         }
     
-    #home .texto{
+    .texto{
         padding: 5%;
         width: 80%;
     }
@@ -679,7 +671,7 @@ button:hover{
         font-size: 25px;
     }
     
-    #home .foto{
+    .foto{
         padding: 5%;
         width: 100%;
     }
@@ -690,9 +682,6 @@ button:hover{
         border: 5px solid white;
     }
 
-    #home1{
-        margin: 10% 0% 0% 0%;
-    
     .hero-content h2 {
         font-size: 5em;
     }
@@ -738,7 +727,7 @@ button:hover{
         display: flex;
     }
 
-    #contact .contacte {
+    .contacte {
         width: 70%;
     }
 
@@ -754,242 +743,236 @@ button:hover{
     .contacte input::placeholder {
         color: black;
     }
-}
 
-section {
-    margin: 50px 0;
-    padding: 10px;
-    border-radius: 5px;
-    
-}
+    section {
+        margin: 50px 0;
+        padding: 10px;
+        border-radius: 5px;   
+    }
 
-.hero {
-    position: relative;
-    width: 97%;
-    height: 300px; /* Ajuste a altura da seção conforme necessário */
-    overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
-}
+    .hero {
+        position: relative;
+        width: 97%;
+        height: 300px; /* Ajuste a altura da seção conforme necessário */
+        overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
+    }
 
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Coloca a imagem atrás do conteúdo */
-}
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Coloca a imagem atrás do conteúdo */
+    }
 
-.hero-image img {
-    object-fit: cover; /* Redimensiona a imagem para preencher todo o espaço */
-    width: 100%;
-    height: 100%;
-}
+    .hero-image img {
+        object-fit: cover; /* Redimensiona a imagem para preencher todo o espaço */
+        width: 100%;
+        height: 100%;
+    }
 
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
+    .hero-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
 
-.hero-content h2 {
-    font-size: 2em;
-    text-align: left; /* Alinhe o texto à esquerda */
-    padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
-}
+    .hero-content h2 {
+        font-size: 2em;
+        text-align: left; /* Alinhe o texto à esquerda */
+        padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
+    }
 
-/* ... (seu CSS existente) */
+    /* ... (seu CSS existente) */
 
-input::placeholder, textarea::placeholder {
-    color: #de933b;
-    font-weight: bolder;
-}
+    input::placeholder, textarea::placeholder {
+        color: #de933b;
+        font-weight: bolder;
+    }
 
-section #whywe {
-    text-align: center;
-}
+    section #whywe {
+        text-align: center;
+    }
 
-.why img {
-    max-width: 75%;
-    height: auto;
-    border: 5px solid white;
-    border-radius: 15%;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
+    .why img {
+        max-width: 75%;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 15%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
 
-section .service {
-    padding: 10px 0 0 10px;
-    text-align: center;
-}
+    section .service {
+        padding: 10px 0 0 10px;
+        text-align: center;
+    }
 
-.service img {
-    max-width: 100%;
-    height: auto;
-    border: 5px solid white;
-    border-radius: 15%;
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
+    .service img {
+        max-width: 100%;
+        height: auto;
+        border: 5px solid white;
+        border-radius: 15%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
 
-/* Estilos para as estrelas */
-.estrelas {
-    font-size: 24px;
-    color: #de933b;
-    cursor: pointer;
-}
+    /* Estilos para as estrelas */
+    .estrelas {
+        font-size: 24px;
+        color: #de933b;
+        cursor: pointer;
+    }
 
-.estrelas-avaliacao {
-    font-size: 24px;
-    color: #fdd835; /* Cor das estrelas selecionadas (amarelo) */
-}
+    .estrelas-avaliacao {
+        font-size: 24px;
+        color: #fdd835; /* Cor das estrelas selecionadas (amarelo) */
+    }
 
-.faq .resposta {
-    display: none;
-    /* As respostas ficarão ocultas por padrão */
-}
+    .faq .resposta {
+        display: none;
+        /* As respostas ficarão ocultas por padrão */
+    }
 
-.faq .pergunta-titulo {
-    cursor: pointer;
-    /* O ponteiro do mouse muda para um ícone de mão ao passar sobre as perguntas */
-    transition: transform 0.3s;
-    font-size: medium;
-}
+    .faq .pergunta-titulo {
+        cursor: pointer;
+        /* O ponteiro do mouse muda para um ícone de mão ao passar sobre as perguntas */
+        transition: transform 0.3s;
+        font-size: medium;
+    }
 
-.faq .pergunta-titulo.clicada {
-    transform: translateX(20px); /* Altere a distância conforme necessário */
-}
-/* Estilos para a seção "contact" */
-#contact {
-    display: flex; /* Faz as divs ficarem lado a lado */
-    flex-direction: row; /* Disposição em linha (padrão) */
-    flex-wrap: nowrap; /* Evita quebras de linha */
-    justify-content: space-between; /* Distribui o espaço entre as divs */
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-}
+    .faq .pergunta-titulo.clicada {
+        transform: translateX(20px); /* Altere a distância conforme necessário */
+    }
+    /* Estilos para a seção "contact" */
+    #contact {
+        display: flex; /* Faz as divs ficarem lado a lado */
+        flex-direction: row; /* Disposição em linha (padrão) */
+        flex-wrap: nowrap; /* Evita quebras de linha */
+        justify-content: space-between; /* Distribui o espaço entre as divs */
+        align-items: center; /* Centraliza verticalmente o conteúdo */
+    }
 
-.contacte {
-    flex: 70%; /* A primeira div (contacte) ocupa 70% do espaço disponível */
-    padding: 20px;
-}
-
-.horario {
-    flex: 30%; /* A segunda div (horario) ocupa 30% do espaço disponível */
-    padding: 20px;
-}
-
-/* Estilos para o formulário de contato e botão do WhatsApp (dentro da div contacte) */
-.contacte form {
-        max-width: 500px; /* Define a largura máxima do formulário */
+    .contacte {
+        flex: 70%; /* A primeira div (contacte) ocupa 70% do espaço disponível */
         padding: 20px;
+    }
+
+    .horario {
+        flex: 30%; /* A segunda div (horario) ocupa 30% do espaço disponível */
+        padding: 20px;
+    }
+
+    /* Estilos para o formulário de contato e botão do WhatsApp (dentro da div contacte) */
+    .contacte form {
+            max-width: 500px; /* Define a largura máxima do formulário */
+            padding: 20px;
+            border-radius: 5px;
+    }
+
+    input{
+        border: 1px solid #ccc;
+    }
+
+    label, input, textarea {
+        width: 90%; /* Define a largura máxima para ocupar todo o espaço do formulário */
+        padding: 10px;
+        margin: 10px 0;
         border-radius: 5px;
+    }
+
+    input::placeholder{
+        color: #de933b;
+        font-weight: bolder;
+    }
+
+    button {
+        background-color: #de933b;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Estilos para o botão do WhatsApp */
+    .botao-whatsapp {
+        display: inline-block;
+        background-color: #25d366; /* Cor do WhatsApp */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .botao-whatsapp i {
+        margin-right: 10px;
+    }
+
+    .botao-whatsapp:hover {
+        background-color: #128C7E; /* Cor alternativa quando hover */
+    }
+
+
+
+    /* Estilos para o footer */
+    .footer {
+        background-color: #de933b;
+        padding: 20px 0;
+        color: #fff;
+        text-align: center;
+    }
+
+    .footer .logo {
+        margin-bottom: 20px;
+    }
+
+    .footer .logo img {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .footer .redes-sociais h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .footer .redes-sociais ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer .redes-sociais li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .footer .redes-sociais a {
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
+    }
 }
-
-input{
-    border: 1px solid #ccc;
-}
-
-label, input, textarea {
-    width: 90%; /* Define a largura máxima para ocupar todo o espaço do formulário */
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-input::placeholder{
-    color: #de933b;
-    font-weight: bolder;
-}
-
-button {
-    background-color: #de933b;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Estilos para o botão do WhatsApp */
-.botao-whatsapp {
-    display: inline-block;
-    background-color: #25d366; /* Cor do WhatsApp */
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.botao-whatsapp i {
-    margin-right: 10px;
-}
-
-.botao-whatsapp:hover {
-    background-color: #128C7E; /* Cor alternativa quando hover */
-}
-
-
-
-/* Estilos para o footer */
-.footer {
-    background-color: #de933b;
-    padding: 20px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.footer .logo {
-    margin-bottom: 20px;
-}
-
-.footer .logo img {
-    max-width: 150px;
-    height: auto;
-}
-
-.footer .redes-sociais h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer .redes-sociais ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer .redes-sociais li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer .redes-sociais a {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Estilize os ícones das redes sociais conforme necessário */
-
-
 
 @media screen and (max-width: 600px) {
     /* Estilos específicos para telefones */
 
-    #site-header .logo img,
-#site-footer .logo img {
+    header .logo img, footer .logo img {
     width: 60%; /* Mantém a largura original do logotipo */
     height: auto; /* Mantém a altura original do logotipo */
     max-width: none; /* Remove a limitação de largura máxima */
     max-height: none; /* Remove a limitação de altura máxima */
 }
 
-    #site-header .menuu {
+    header .menuu {
         display: none; /* Oculta o menu no mobile por padrão */
         flex-direction: column;
         position: absolute;
@@ -1000,20 +983,20 @@ button {
         width: 50%;
     }
 
-    #site-header .menu-icon {
+    header .menu-icon {
         display: block; /* Exibe o ícone do menu no mobile */
         font-size: 24px;
         cursor: pointer;
         color: #fff;
     }
 
-    #site-header .menu-icon.open {
+    header .menu-icon.open {
         background-color: #de933b;
         color: #fff;
     }
 
     /* Estilos para o menu hamburguer quando aberto */
-    #site-header .menu-icon.open + .menuu {
+    header .menu-icon.open + .menuu {
         display: block; /* Exibe o menu quando o ícone do menu está aberto */
     }
     .hero {
@@ -1051,8 +1034,6 @@ button {
         padding: 20px;
         border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
     }
-    
-    
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
@@ -1060,40 +1041,72 @@ button {
     header {
         padding: 20px;
     }
+
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-}
-#home{
-    padding: 50px 0 0 0;
+
+    #home{
+        padding: 50px 0 0 0;
+    }
 }
 @media screen and (min-width: 1025px) {
+
     section {
         padding: 80px 20px;
-        border-radius: 5px;
-        
+        border-radius: 5px;      
     }
+
     #home{
         padding: 0 20px;
     }
 
     #home1{
-        margin: 10% 0% 0% 0%;
+        margin-top: 2%;
+    }
+
+    .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    }
+
+    .hero-image img {
+        object-fit: cover;
+        width: 93%;
+        height: 100%;
     }
     
+    .hero-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 93%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: rgba(7, 116, 241, 0.514);
+        color: #fff;
+        }
+
     .hero-content h2 {
         font-size: 5em;
     }
+
     .logo img{
         width: 25%;
         height: auto;
     }
 
-    #whywe article{
+    article{
         display: flex;
         justify-content: center;
     }
+
     .why {
         display: inline-block; /* Define as divs de serviços como elementos em linha */
         width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
@@ -1114,12 +1127,6 @@ button {
         width: 75%;
     }
 
-
-#services article{
-    display: flex;
-    justify-content: center;
-}
-
     .service {
         display: inline-block; /* Define as divs de serviços como elementos em linha */
         width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
@@ -1128,13 +1135,12 @@ button {
         padding: 10px;
     }
 
-
-    #tarifa article{
-        display: flex;
-        justify-content: center;
+    .tarifa {
+    max-width: 25%;
+    text-align: center;
     }
     
-    #tarifa div{
+    .tarifa {
         margin: 5% 5%;
         text-align: center;
     }
@@ -1152,7 +1158,7 @@ button {
         display: flex;
     }
 
-    #contact .contacte{
+    .contacte{
         width: 70%;
     }
 
