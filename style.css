@@ -201,7 +201,7 @@ section {
     width: 97%;
     height: 300px;
     overflow: hidden;
-    margin: 0%;
+    margin: 5%;
 }
 
 .hero-image {
@@ -1085,6 +1085,11 @@ button {
     .logo img{
         width: 25%;
         height: auto;
+    }
+
+    #whywe article{
+        display: flex;
+        justify-content: center;
     }
     .why {
         display: inline-block; /* Define as divs de serviços como elementos em linha */
