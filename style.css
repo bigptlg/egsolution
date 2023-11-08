@@ -35,82 +35,82 @@ footer .logo img {
 
 
 /* Estilos para o header */
-header {
+#site-header {
     background-color: #de933b; /* Cor de fundo do header */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
-    transition: top 0.5s; /* Adiciona uma transição suave para o topo do header */
+    width: 97%;
+    transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
     top: 0;
     border-radius: 0 0 10% 10%;
     z-index: 1;
 }
 
-header .logo {
+#site-header .logo {
     margin: 0;
 }
 
-header .logo img {
+#site-header .logo img {
     max-width: 75%;
     height: auto;
 }
 
-header .menu-icon {
+#site-header .menu-icon {
     display: none; /* Oculta o ícone do menu no PC e Tablet */
 }
 
 /* Estilos para o menu principal e submenu */
-header .menuu ul {
+#site-header .menuu ul {
     list-style: none;
     padding: 0;
     display: flex;
 }
 
-header .menuu li {
+#site-header .menuu li {
     margin-right: 20px;
     position: relative; /* Para o submenu */
 }
 
-header .menuu a {
+#site-header .menuu a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-header .menuu a:hover {
+#site-header .menuu a:hover {
     color: #4ea9d3; /* Cor alternativa quando hover */
 }
 
 /* Estilos para o submenu */
-header .menuu .submenu {
+#site-header .menuu .submenu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #de933b;
+    background-color: #f1f1f1;
     display: none;
-    border-radius: 5%;
 }
 
-header .menuu li:hover .submenu {
+#site-header .menuu li:hover .submenu {
     display: block;
 }
 
-header .submenu li {
+#site-header .submenu li {
     margin: 0;
 }
 
-header .submenu a {
+#site-header .submenu a {
     color: #333; /* Cor do texto do submenu */
     font-weight: normal;
 }
 
-header .submenu a:hover {
+#site-header .submenu a:hover {
     color: #4ea9d3; /* Cor alternativa quando hover no submenu */
 }
+
 
 .cursor-pointer:hover {
     cursor: url('cursor.cur'), auto;
@@ -118,11 +118,6 @@ header .submenu a:hover {
 
 .direito {
     font-size: small;
-}
-
-body {
-    background-color: #4ea9d3;
-    font-family: Arial, sans-serif;
 }
 
 img:not(.logo) {
@@ -138,7 +133,7 @@ header .logo img, footer .logo img {
     max-height: none;
 }
 
-header {
+/*header {
     background-color: #de933b;
     padding: 10px 0;
     display: flex;
@@ -148,7 +143,7 @@ header {
     width: 100%;
     transition: top 0.3s;
     top: 0;
-    border-radius: 0 0 calc(10% + 0px) calc(10% + 0px); /* Utilizando calc para o raio da borda */
+    border-radius: 0 0 calc(10% + 0px) calc(10% + 0px); /* Utilizando calc para o raio da borda 
     z-index: 1;
 }
 
@@ -177,7 +172,7 @@ header .menuu a:hover {
     color: #4ea9d3;
     cursor: url('cursor.cur'), auto;
     transform: scale(1.1);
-}
+}*/
 
 section {
     margin: 50px 0;
