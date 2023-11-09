@@ -475,6 +475,7 @@ button:hover{
     text-decoration: none;
 }
 
+/* Telefone */
 @media screen and (max-width: 600px) {
     header .logo img, footer .logo img {
         width: calc(60% - 0px);
@@ -568,6 +569,7 @@ button:hover{
     }
 }
 
+/* tablet */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     header {
         padding: 20px;
@@ -635,7 +637,7 @@ button:hover{
     }
     
 }
-
+/* pc */ /*
 @media screen and (min-width: 1025px) {
 
     body { 
@@ -789,8 +791,6 @@ button:hover{
         padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
     }
 
-    /* ... (seu CSS existente) */
-
     input::placeholder, textarea::placeholder {
         color: #de933b;
         font-weight: bolder;
@@ -850,7 +850,7 @@ button:hover{
     .faq .pergunta-titulo.clicada {
         transform: translateX(20px); /* Altere a distância conforme necessário */
     }
-    /* Estilos para a seção "contact" */
+    
     #contact {
         display: flex; /* Faz as divs ficarem lado a lado */
         flex-direction: row; /* Disposição em linha (padrão) */
@@ -959,7 +959,7 @@ button:hover{
         color: #fff;
         text-decoration: none;
     }
-}
+}*/
 
 @media screen and (max-width: 600px) {
     /* Estilos específicos para telefones */
