@@ -42,7 +42,6 @@ footer .logo img {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 97%;
     transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
     top: 0;
     border-radius: 0 0 10% 10%;
@@ -637,6 +636,10 @@ button:hover{
 }
 
 @media screen and (min-width: 1025px) {
+
+    body { 
+        width: 98%;
+    }
     
     section {
         padding: 80px 20px;
