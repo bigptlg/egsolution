@@ -45,6 +45,7 @@ footer .logo img {
     transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
     top: 0;
     border-radius: 0 0 10% 10%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -181,7 +182,7 @@ section {
 
 .hero {
     position: relative;
-    width: 100%;
+    width: 97%;
     height: 300px;
     overflow: hidden;    
 }
