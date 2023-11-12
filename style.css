@@ -90,7 +90,7 @@ footer .logo img {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f1f1f1;
+    background-color: #de933b;
     display: none;
 }
 
@@ -103,7 +103,7 @@ footer .logo img {
 }
 
 #site-header .submenu a {
-    color: #333; /* Cor do texto do submenu */
+    color: #fff; /* Cor do texto do submenu */
     font-weight: normal;
 }
 
@@ -475,7 +475,7 @@ button:hover{
     text-decoration: none;
 }
 
-/* Telefone */
+/* Telefone */ /*
 @media screen and (max-width: 600px) {
     header .logo img, footer .logo img {
         width: calc(60% - 0px);
@@ -567,9 +567,9 @@ button:hover{
         object-fit: cover;
         aspect-ratio: 1 / 1;
     }
-}
+}*/
 
-/* tablet */
+/* tablet */ 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     header {
         padding: 20px;
@@ -603,7 +603,7 @@ button:hover{
     }
     
     .foto{
-        padding: 5%;
+        margin: 5%;
     }
     
     .foto img{
@@ -622,6 +622,15 @@ button:hover{
         aspect-ratio: 1 / 1;
     }
 
+    .vantagens{
+        text-align: center;
+    }
+
+    .tarifa {
+        max-width: 75%;
+        text-align: center;
+    }
+
     .service img {
         max-width: calc(50% - 0px);
         height: auto;
@@ -629,14 +638,10 @@ button:hover{
         border-radius: calc(15% + 0px);
         object-fit: cover;
         aspect-ratio: 1 / 1;
-    }
-    
-    .tarifa {
-        max-width: 75%;
-        text-align: center;
-    }
+    }   
     
 }
+
 /* pc */ /*
 @media screen and (min-width: 1025px) {
 
@@ -754,8 +759,8 @@ button:hover{
     .hero {
         position: relative;
         width: 97%;
-        height: 300px; /* Ajuste a altura da seção conforme necessário */
-        overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
+        height: 300px;
+        overflow: hidden;
     }
 
     .hero-image {
@@ -764,11 +769,11 @@ button:hover{
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1; /* Coloca a imagem atrás do conteúdo */
+        z-index: -1;
     }
 
     .hero-image img {
-        object-fit: cover; /* Redimensiona a imagem para preencher todo o espaço */
+        object-fit: cover;
         width: 100%;
         height: 100%;
     }
@@ -787,8 +792,8 @@ button:hover{
 
     .hero-content h2 {
         font-size: 2em;
-        text-align: left; /* Alinhe o texto à esquerda */
-        padding: 20px; /* Adicione espaço para afastar do canto esquerdo */
+        text-align: left;
+        padding: 20px;
     }
 
     input::placeholder, textarea::placeholder {
@@ -823,7 +828,6 @@ button:hover{
         aspect-ratio: 1 / 1;
     }
 
-    /* Estilos para as estrelas */
     .estrelas {
         font-size: 24px;
         color: #de933b;
@@ -832,46 +836,43 @@ button:hover{
 
     .estrelas-avaliacao {
         font-size: 24px;
-        color: #fdd835; /* Cor das estrelas selecionadas (amarelo) */
+        color: #fdd835;
     }
 
     .faq .resposta {
         display: none;
-        /* As respostas ficarão ocultas por padrão */
     }
 
     .faq .pergunta-titulo {
         cursor: pointer;
-        /* O ponteiro do mouse muda para um ícone de mão ao passar sobre as perguntas */
         transition: transform 0.3s;
         font-size: medium;
     }
 
     .faq .pergunta-titulo.clicada {
-        transform: translateX(20px); /* Altere a distância conforme necessário */
+        transform: translateX(20px);
     }
     
     #contact {
-        display: flex; /* Faz as divs ficarem lado a lado */
-        flex-direction: row; /* Disposição em linha (padrão) */
-        flex-wrap: nowrap; /* Evita quebras de linha */
-        justify-content: space-between; /* Distribui o espaço entre as divs */
-        align-items: center; /* Centraliza verticalmente o conteúdo */
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between; 
+        align-items: center; 
     }
 
     .contacte {
-        flex: 70%; /* A primeira div (contacte) ocupa 70% do espaço disponível */
+        flex: 70%;
         padding: 20px;
     }
 
     .horario {
-        flex: 30%; /* A segunda div (horario) ocupa 30% do espaço disponível */
+        flex: 30%;
         padding: 20px;
     }
 
-    /* Estilos para o formulário de contato e botão do WhatsApp (dentro da div contacte) */
     .contacte form {
-            max-width: 500px; /* Define a largura máxima do formulário */
+            max-width: 500px;
             padding: 20px;
             border-radius: 5px;
     }
@@ -881,7 +882,7 @@ button:hover{
     }
 
     label, input, textarea {
-        width: 90%; /* Define a largura máxima para ocupar todo o espaço do formulário */
+        width: 90%;
         padding: 10px;
         margin: 10px 0;
         border-radius: 5px;
@@ -900,10 +901,9 @@ button:hover{
         cursor: pointer;
     }
 
-    /* Estilos para o botão do WhatsApp */
     .botao-whatsapp {
         display: inline-block;
-        background-color: #25d366; /* Cor do WhatsApp */
+        background-color: #25d366;
         color: #fff;
         padding: 10px 20px;
         border-radius: 5px;
@@ -917,12 +917,9 @@ button:hover{
     }
 
     .botao-whatsapp:hover {
-        background-color: #128C7E; /* Cor alternativa quando hover */
+        background-color: #128C7E;
     }
 
-
-
-    /* Estilos para o footer */
     .footer {
         background-color: #de933b;
         padding: 20px 0;
@@ -961,18 +958,23 @@ button:hover{
     }
 }*/
 
+/* Estilos específicos para telefones */ 
 @media screen and (max-width: 600px) {
-    /* Estilos específicos para telefones */
+    
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
 
     header .logo img, footer .logo img {
-    width: 60%; /* Mantém a largura original do logotipo */
-    height: auto; /* Mantém a altura original do logotipo */
-    max-width: none; /* Remove a limitação de largura máxima */
-    max-height: none; /* Remove a limitação de altura máxima */
-}
+        width: calc(60% - 0px);
+        height: auto;
+        max-width: none;
+        max-height: none;
+    }
 
     header .menuu {
-        display: none; /* Oculta o menu no mobile por padrão */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -983,9 +985,9 @@ button:hover{
     }
 
     header .menu-icon {
-        display: block; /* Exibe o ícone do menu no mobile */
+        display: block;
         font-size: 24px;
-        cursor: pointer;
+        cursor: url('cursor.cur'), auto;
         color: #fff;
     }
 
@@ -994,15 +996,49 @@ button:hover{
         color: #fff;
     }
 
-    /* Estilos para o menu hamburguer quando aberto */
     header .menu-icon.open + .menuu {
-        display: block; /* Exibe o menu quando o ícone do menu está aberto */
+        display: block;
     }
+
+    #home1{
+        margin-top: 100px;
+    }
+
+    #home{
+        text-align: center;
+        }
+    
+    .texto{
+        margin-top: 15%;
+        width: 93%;
+    }
+    
+    #home h1{
+        font-size: 35px;
+    }
+    
+    #home p{
+        font-size: 20px;
+    }
+
+    .foto{
+        margin: 5% 0;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .foto img{
+        width:100%;
+        border-radius: 10%;
+        border: 5px solid white;
+        aspect-ratio: 1 / 1;
+    }
+
     .hero {
         position: relative;
         width: 93%;
-        height: 300px; /* Ajuste a altura da seção conforme necessário */
-        overflow: hidden; /* Oculta o conteúdo que excede a altura da seção */
+        height: 300px;
+        overflow: hidden;
     }
 
     .tarifa {
@@ -1031,42 +1067,52 @@ button:hover{
     .contacte form {
         max-width: 90%;
         padding: 20px;
-        border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
+        border-radius: calc(5px + 0px);
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Estilos específicos para tablets */
-    header {
-        padding: 20px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #home{
-        padding: 50px 0 0 0;
-    }
-}
+/* PC */ 
 @media screen and (min-width: 1025px) {
 
-    body{
-        width: 97%;
-    }
-    
     section {
         padding: 80px 20px;
-        border-radius: 5px;      
+        border-radius: calc(5px + 0px);
     }
 
-    #home{
+    #home {
         padding: 0 20px;
     }
 
+    #home{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        }
+
+    #home h1{
+        font-size: 45px;
+        width: 93%;
+    }
+    
+    #home p{
+        font-size: 25px;
+    }
+
     #home1{
-        margin-top: 2%;
+        margin: 3% 0 0 0;
+    }
+
+    #home1 h1{
+        font-size: 45px;
+    }
+
+    #home1 p{
+        font-size: 20px;
+    }
+
+    .hero{
+        margin: 0;
+        width: 97%;
     }
 
     .hero-image {
@@ -1080,7 +1126,7 @@ button:hover{
 
     .hero-image img {
         object-fit: cover;
-        width: 93%;
+        width: 100%;
         height: 100%;
     }
     
@@ -1088,7 +1134,7 @@ button:hover{
         position: absolute;
         top: 0;
         left: 0;
-        width: 93%;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -1098,6 +1144,24 @@ button:hover{
 
     .hero-content h2 {
         font-size: 5em;
+    }
+
+
+    .texto{
+        padding: 5%;
+        width: 80%;
+    }
+    
+    
+    .foto{
+        padding: 5%;
+        width: 100%;
+    }
+    
+    .foto img{
+        width:100%;
+        border-radius: 10%;
+        border: 5px solid white;
     }
 
     .logo img{
@@ -1111,10 +1175,10 @@ button:hover{
     }
 
     .why {
-        display: inline-block; /* Define as divs de serviços como elementos em linha */
-        width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
-        margin: 1%; /* Adiciona uma pequena margem entre as divs */
-        text-align: center; /* Centraliza o conteúdo dentro das divs */
+        display: inline-block; 
+        width: 20%; 
+        margin: 1%; 
+        text-align: center; 
         padding: 10px;
     }
 
@@ -1131,10 +1195,10 @@ button:hover{
     }
 
     .service {
-        display: inline-block; /* Define as divs de serviços como elementos em linha */
-        width: 20%; /* Define uma largura de 24% para garantir que quatro divs caibam na linha */
-        margin: 1%; /* Adiciona uma pequena margem entre as divs */
-        text-align: center; /* Centraliza o conteúdo dentro das divs */
+        display: inline-block; 
+        width: 20%; 
+        margin: 1%; 
+        text-align: center; 
         padding: 10px;
     }
 
