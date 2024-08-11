@@ -1,250 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A EG Solution oferece serviços de instalação de GPS veicular, instalação de alarme veicular, montagem de CCTV e montagem de redes de TI. Entre em contacto connosco para soluções de segurança e monitoramento.">
-    <meta name="keywords" content="EG Solution, segurança, GPS veicular, alarme veicular, CCTV, redes de TI">
-    <meta name="author" content="BigPTLG">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>EG Solution</title>
+    <title>Edy Global Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mob.css">
+    <script src="https://kit.fontawesome.com/509ccb4d2f.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- Código do Google AdSense -->
-    <!--<script>
-        (adsbygoogle = window.adsbygoogle || []).push({
-            google_ad_client: "ca-pub-SEU_CÓDIGO_DO_ADSENSE",
-            enable_page_level_ads: true
-        });
-    </script>-->
-    <!-- Metatags para redes sociais (Open Graph e Twitter Cards) -->
-    <meta property="og:title" content="EG Solution - Sua Solução em Segurança">
-    <meta property="og:description" content="Oferecemos serviços de instalação de GPS veicular, instalação de alarme veicular, montagem de CCTV e montagem de redes de TI. Entre em contacto connosco para soluções de segurança e monitoramento.">
-    <meta property="og:image" content="https://www.exemplo.com/imagem-social.jpg">
-    <meta name="twitter:title" content="EG Solution - Sua Solução em Segurança">
-    <meta name="twitter:description" content="Oferecemos serviços de instalação de GPS veicular, instalação de alarme veicular, montagem de CCTV e montagem de redes de TI. Entre em contacto connosco para soluções de segurança e monitoramento.">
-    <meta name="twitter:image" content="https://www.exemplo.com/imagem-twitter.jpg">
-    <meta http-equiv="content-language" content="pt-BR">
-    <!-- Links para os mapas do Google (se aplicável) -->
-    <link rel="canonical" href="https://www.exemplo.com/pagina-canonica">
-    
-    <!-- Tags de referência (rel="nofollow" pode ser usado para links não confiáveis) -->
-    <link rel="stylesheet" href="estilo-relacionado.css" rel="stylesheet" type="text/css">
-    <link rel="preload" href="fonte.woff" as="font" type="font/woff" crossorigin="anonymous">
-    
-    <!-- Definir o tempo de atualização automática da página -->
-    <meta http-equiv="refresh" content="300">
-    
-    <!-- Tags de verificação para mecanismos de busca e redes sociais -->
-    <meta name="google-site-verification" content="sua-chave-de-verificacao-google">
-    <meta name="facebook-domain-verification" content="sua-chave-de-verificacao-facebook">
-
 </head>
 <body>
-
-    <header id="site-header">
-        <h1 class="logo"><a href="index.html"><img src="logo1.1.png" alt="EG Solution"></a></h1>
-        <div class="menu-icon">&#9776;</div> <!-- Ícone do menu hamburguer -->
-        <nav class="menuu">
-            <ul>
-                <li><a href="index.html">Início</a></li><!--
-                <li><a href="#whywe">Porquê nós</a></li>-->
-                <li><a href="#services">Serviços</a>
-                    <ul class="submenu">
-                        <li><a href="gps.html">GPS</a></li>
-                        <li><a href="alarme.html">Alarme Veicular</a></li>
-                        <li><a href="cctv.html">CCTV</a></li>
-                        <li><a href="ti.html">Redes de TI</a></li>
-                    </ul>
-                </li><!--
-                <li><a href="#contact">Contato</a></li>-->
-            </ul>
-        </nav>
+    
+    <header>
+        <img src="logo1.png" alt="Edy Global solutions" class="logo">
+        <div id="menu">
+            <label for="menu-toggle" onclick="menu()">
+                <span class="linha1"></span>
+                <span class="linha2"></span>
+                <span class="linha3"></span>
+            </label>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <nav>    
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Contactar</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
- 
-    <section id="home1">
-        <h1>EG Solution: A segurança que
+
+    <div class="carrossel">
+		<button id="anteriorBtn">&lt;</button>
+		<button id="proximoBtn">&gt;</button>
+	
+		<div class="imagem">
+			<img src="image1.1.jpg" alt="Imagem 1">
+		</div>
+		
+		<div class="imagem">
+			<img src="image2.1.jpg" alt="Imagem 2">
+		</div>
+		
+		<div class="imagem">
+			<img src="image3.1.jpg" alt="Imagem 3">
+		</div>
+		
+		<div class="imagem">
+			<img src="image4.1.jpg" alt="Imagem 4">
+		</div>
+	</div><header>
+        <img src="logo1.png" alt="Edy Global solutions" class="logo">
+        <div id="menu">
+            <label for="menu-toggle" onclick="menu()">
+                <span class="linha1"></span>
+                <span class="linha2"></span>
+                <span class="linha3"></span>
+            </label>
+            <input type="checkbox" id="menu-toggle" style="display: none;">
+            <nav>    
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Contactar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="introducao">
+        <h1>Edy Global Solutions: A segurança que
             você precisa</h1>
         <p>Mergulhe em uma experiência única neste cenário em constante evolução.</p>
-        <p>EG Solution, não apenas oferecemos soluções: nós redefinimos as possibilidades.</p>
-    </section>
-
-    <section class="hero">
-        <div class="hero-image">
-            <!-- Imagem de fundo da seção -->
-            <img src="seg.jpeg" alt="Sinta-se mais seguro">
+        <p>Edy Global Solutions, não apenas oferecemos soluções: nós redefinimos as possibilidades.</p>
         </div>
-        <div class="hero-content">
-            <!-- Texto sobreposto à imagem -->
-            <h2>Sinta-se mais<br> seguro com a <br>EG Solution</h2>
-        </div>
-    </section>
 
-<!-- Adicione anúncios entre os parágrafos, conforme necessário -->
-<!-- Aqui mas remova isso de dentro do comentario
-    <p>Este é um exemplo de texto no seu conteúdo.</p>
-    <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-SEU_CÓDIGO_DO_ADSENSE"
-    data-ad-slot="SEU_SLOT_DO_ADSENSE"
-    data-ad-format="auto"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    
-    <p>Continue seu conteúdo aqui.</p>
--->
+    <h1 class="container" id="nos">Quem somos</h1>
+    <div class="containere">
+        <section class="imagem"><img src="nos1.jpeg" alt="Quem somos nos"></section>
+        <section class="texto">
+            <h3>Somos uma empresa especializada em serviços de segurança eletrônica.</h3>
+            <p>Nossa equipe altamente qualificada oferece soluções abrangentes para proteger seus ativos e garantir a segurança de veículos e instalações.
+            <br><br>
+                Estamos comprometidos em fornecer soluções simples e eficazes que aumentam a produtividade, melhoram a qualidade do serviço e garantem a segurança dos ativos da sua empresa. Conte conosco para proteger o que é importante para você!
+            </p>
+        </section>
+    </div>
 
-
-
-    <section id="whywe">
-        <h2>Porquê nos escolher?</h2>
-        <article>
-        <div class="why">
-            <img src="excelencia.jpeg" alt="Excelência">
-            <h3>Excelência</h3>
-            <p>Criamos experiências inigualáveis, visando a perfeição e dando atenção aos mínimos detalhes, que superam suas expectativas.</p>
-        </div>
-        <div class="why">
-            <img src="professionalismo.jpg" alt="Professionalismo">
-            <h3>Professionalismo</h3>
-            <p>Entregamos um serviço de alto nível e usamos nosso conhecimento para lidar com as solicitações, assim sua jornada pode ser tranquila e sem complicações.</p>
-        </div>
-        <div class="why">
-            <img src="conhecimentos.jpeg" alt="Conhecimentos específicos">
-            <h3>Conhecimentos específicos</h3>
-            <p>Nosso conhecimento profundo do setor permite oferecer um serviço planejado especificamente para as necessidades da sua empresa.</p>
-        </div></article>
-    </section>
-
-    <section id="services">
-        <h2>Nossos Serviços</h2>
-        <article>
-        <div class="service">
-            <a href="gps.html"><img src="gps_instalacao.jpeg" alt="Instalação de GPS Veicular"></a>
-            <h3>Instalação de GPS Veicular</h3>
+    <h1 id="servicos">Nossos serviços</h1>
+    <div class="servicos">
+        <section class="servico">
+            <a href="gps.html"><img src="servico1.jpeg" alt="GPS Veicular"></a>
+            <h2>Instalação de GPS</h2>
             <p>A instalação de GPS veicular é a solução ideal para quem busca segurança e controle sobre seus veículos. Com um GPS instalado, você pode saber sempre onde seu carro, moto ou outro veículo está.</p>
-            <button><a href="gps.html">Saiba mais</a></button>
-        </div>
-        <div class="service">
-            <a href="alarme.html"><img src="alarme_instalacao.jpeg" alt="Instalação de Alarme Veicular"></a>
-            <h3>Instalação de Alarme Veicular</h3>
+            <a href="gps.html"><button>Saiba mais</button></a>
+        </section>
+
+        <section class="servico">
+            <a href="alarme.html"><img src="servico2.jpeg" alt="Alarme Veicular"></a>
+            <h2>Instalação de Alarme Veicular</h2>
             <p>A instalação de alarme veicular é a solução ideal para quem busca proteção contra roubos e furtos. Com um alarme instalado, você pode evitar que seu veículo seja levado.</p>
-            <button><a href="alarme.html">Saiba mais</a></button>
-        </div>
-        <div class="service">
-            <a href="cctv.html"><img src="cctv.jpeg" alt="Montagem de CCTV"></a>
-            <h3>Montagem de CCTV</h3>
+            <a href="alarme.html"><button>Saiba mais</button></a>
+        </section>
+
+        <section class="servico">
+            <a href="cctv.html"><img src="servico3.jpeg" alt="CCTV">
+            <h2>Montagem de CCTV</h2></a>
             <p>A montagem de CCTV é a solução ideal para quem busca segurança e monitoramento de propriedades. Com um sistema de CCTV instalado, você pode monitorar o que está acontecendo em sua propriedade em tempo real.</p>
-            <button><a href="cctv.html">Saiba mais</a></button>
-        </div>
-        <div class="service">
-            <a href="ti.html"><img src="redes_ti.jpeg" alt="Montagem de Redes de TI"></a>
-            <h3>Montagem de Redes de TI</h3>
+            <a href="cctv.html"><button>Saiba mais</button></a>
+        </section>
+
+        <section class="servico">
+            <a href="ti.html"><img src="servico4.jpeg" alt="Redes de TI"></a>
+            <h2>Montagem de Redes de TI</h2>
             <p>A montagem de redes de TI é a solução ideal para quem busca conectividade e segurança de dados. Com uma rede de TI instalada, você pode conectar seus dispositivos e compartilhar dados de forma segura.</p>
-            <button><a href="ti.html">Saiba mais</a></button>
-        </div></article>
-    </section>
+            <a href="ti.html"><button>Saiba mais</button></a>
+        </section>
+    </div>
 
-    <!--<section class="avaliacoes">
-        <h2>Avaliações dos Usuários</h2>
-        <div class="avaliacao-form">
-            <h3>Deixe a sua avaliação:</h3>            
-            <div class="estrelas">
-                <i class="far fa-star" data-valor="1"></i>
-                <i class="far fa-star" data-valor="2"></i>
-                <i class="far fa-star" data-valor="3"></i>
-                <i class="far fa-star" data-valor="4"></i>
-                <i class="far fa-star" data-valor="5"></i>
-            </div>
-            <div class="campo-nome">
-                <input type="text" id="nome" placeholder="Seu Nome">
-            </div>
-            <textarea id="comentario" placeholder="Comentário"></textarea>
-            <button id="enviar-avaliacao">Enviar Avaliação</button>
-        </div>
-        <div class="avaliacoes-lista">-->
-            <!-- Aqui serão exibidas as avaliações dos usuários com estrelas selecionadas -->
-        <!--</div>
-    </section>
-
-    <section class="comentarios">
-        <h2>Comentários dos Usuários</h2>
-        <div class="comentarios-lista">-->
-            <!-- Aqui serão exibidos os comentários dos usuários -->
-        <!--</div>
-    </section>
-
-    <section class="faq">
-        <h2>Perguntas Frequentes</h2>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">► Como posso entrar em contacto com a empresa?</h3>
-            <p class="resposta">
-                Você pode entrar em contacto connosco por meio do nosso formulário de contacto em nosso site. Além disso, você pode nos ligar pelo número de telefone listado na seção "Contactos".
-            </p>
-        </div>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">► Quais são os serviços oferecidos pela empresa?</h3>
-            <p class="resposta">
-                Oferecemos serviços de instalação de GPS veicular, instalação de alarme veicular, montagem de CCTV e montagem de redes de TI.
-            </p>
-        </div>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">► Qual é o horário de funcionamento da empresa?</h3>
-            <p class="resposta">
-                Estamos abertos de segunda a sexta-feira, das 08h30 às 16h30, e aos sábados, das 08h30 às 12h30.
-            </p>
-        </div>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">►Como funciona o sistema de
-                monitorização de veículos?</h3>
-            <p class="resposta">
-                É instalada em cada veículo uma unidade com um dispositivo de monitorização GPS. Esta unidade permite monitorar o movimento de todos os veículos: onde
-                    estão, onde estavam, quando começaram a jornada, onde pararam e por quanto tempo. Usando um
-                    navegador Web, pode aceder a todas as informações sobre a sua frota. Para mais informações sobre
-                    todas as funcionalidades do gestão de frotas, visite a secção
-                    Funcionalidades.
-            </p>
-        </div>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">►Terceiros poderão monitorizar os
-                meus veículos?</h3>
-            <p class="resposta">
-                Não, a menos que forneça o seu nome de utilizador e senha pessoal.
-            </p>
-        </div>
-        <div class="pergunta">
-            <h3 class="pergunta-titulo">►Quanto tempo leva a EG Solution a instalar o equipamento de monitorização GPS</h3>
-            <p class="resposta">
-                A instalação normalmente leva de 30 minutos à 01 hora, dependendo das características do veículo.
-                    Acessórios adicionais podem exigir mais tempo.
-            </p>
-        </div>-->
-        <!-- Adicione mais perguntas e respostas conforme necessário --><!--
-    </section>-->
-
-    <section id="contact">
-        <div class="contacte">
+    <div id="sobre">
+        <section>
             <h2>Entre em Contacto</h2>
             <p>Estamos prontos para atendê-lo. Entre em contacto connosco.</p>
             <form>
-                <input type="text" id="name" name="name" placeholder="Nome">
+                <input type="text" id="name" name="name" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
                 <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
                 <button type="submit">Enviar</button>
+                <p id="p">ou</p>
             </form>
-            <a href="https://wa.me/244948558954" class="botao-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> Entrar em Contacto pelo WhatsApp
-            </a>
-        </div>
-        <div class="horario">
-            <p>Bela Vista,Rua da Cruz Linda</p><br>
-
-            <p>egsolution21@gmail.com</p>
+            <button><a href="https://wa.me/244948558954" class="botao-whatsapp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Entrar em Contacto pelo WhatsApp
+            </a></button>
+        </section>
+        <section class="horario">
+            <p>Bela Vista, Rua da Cruz Linda</p><br>
+            <p>edyglobalsolutions@gmail.com</p>
             <p>948558954 | 936629314</p><br>
-            
             <p><strong>Domingo</strong> &emsp;&emsp;&emsp;&emsp;Fechado</p>
             <p><strong>Segunda-feira</strong>&emsp;&emsp;08:30 – 16:30</p>
             <p><strong>Terça-feira</strong>&emsp;&nbsp;&ensp;&emsp;&emsp;08:30 – 16:30</p>
@@ -252,23 +144,19 @@
             <p><strong>Quinta-feira</strong>&emsp;&emsp;&emsp;08:30 – 16:30</p>
             <p><strong>Sexta-feira</strong>&emsp;&ensp;&emsp;&emsp;08:30 – 16:30</p>
             <p><strong>Sábado</strong>&emsp;&emsp;&emsp;&emsp;&emsp;08:30 – 12:30</p>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <footer class="footer">
-        <div class="logo">
-            <img src="logo1.1.png" alt="Logotipo da Empresa">
-        </div>
-        <div class="redes-sociais">
-            <h4>Siga-nos nas Redes Sociais</h4>
+    <footer>
+        <div class="social">
+            <h2>Siga-nos nas Redes Sociais</h2>
             <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://facebook.com/profile.php?id=100076204514162"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <!-- Adicione mais redes sociais conforme necessário -->
+                <li><a href="https://www.instagram.com/edyglobal_solutions_su_lda/"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
-      <p class="direito">&copy; 2023 EG Solution - Todos os Direitos Reservados</p>
+        <p>&copy; 2024 Edy Global Solutions</p>
     </footer>
 </body>
 </html>
