@@ -1,1248 +1,326 @@
-*{
+:root {
+    --primary-bg-color: #4ea9d3;   /* Cor de fundo principal */
+    --secondary-bg-color: #de933b; /* Cor de fundo secundária */
+    --text-color: #fff;            /* Cor do texto */
+    --hover-bg-color: #4ea9d3;     /* Cor de fundo ao passar o mouse */
+    --hover-border-color: #de933b; /* Cor da borda ao passar o mouse */
+    --button-bg-color: transparent; /* Cor de fundo do botão */
+    --button-border-color: #fff;    /* Cor da borda do botão */
+    --carrossel-hover-bg: #4ea9d39c; /* Cor de fundo do botão do carrossel ao passar o mouse */
+    --input-border-color: #ccc;     /* Cor da borda do input */
+    --placeholder-color: #de933b;   /* Cor do placeholder */
+    --carrossel-button-color: #de933b; /* Cor do botão do carrossel */
+}
+
+* {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    background-color: #4ea9d3;
-    font-family: Arial, sans-serif;
+h1, h2, h3 {
+    font-weight: bolder;
+    margin: 10px;
 }
 
-a{
+body { 
+    background-color: var(--primary-bg-color);
+    margin-top: 70px;
+    overflow-x: hidden; 
+    position: relative;
+}
+
+p, a {
+    font-weight: bold;
+}
+
+a {
     text-decoration: none;
 }
 
-a:hover{
-    cursor:  url('cursor.cur'), auto;
+a:hover {
+    display: block;
+    transform: scale(1.05); 
 }
 
-/* Estilos para fazer todas as imagens quadradas, exceto logotipos */
-img:not(.logo) {
-    width: 75%; /* Garante que a imagem ocupe 100% da largura do contêiner */
-    height: auto; /* Permite que a altura seja ajustada automaticamente */
-    max-width: 100%; /* Evita que as imagens se estendam além do contêiner */
+ul li {
+    list-style: none;
+    padding: 5px;
 }
 
-/* Estilos para o logotipo no header e no footer */
-header .logo img,
-footer .logo img {
-    width: 35%; /* Mantém a largura original do logotipo */
-    height: auto; /* Mantém a altura original do logotipo */
-    max-width: none; /* Remove a limitação de largura máxima */
-    max-height: none; /* Remove a limitação de altura máxima */
-}
-
-
-/* Estilos para o header */
-#site-header {
-    background-color: #de933b; /* Cor de fundo do header */
-    padding: 10px 0;
+header {
+    background-color: var(--secondary-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    transition: top 0.3s; /* Adiciona uma transição suave para o topo do header */
-    top: 0;
-    border-radius: 0 0 10% 10%;
-    width: 100%;
+    padding: 20px;
     z-index: 1;
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
-#site-header .logo {
-    margin: 0;
-}
-
-#site-header .logo img {
-    max-width: 75%;
-    height: auto;
-}
-
-#site-header .menu-icon {
-    display: none; /* Oculta o ícone do menu no PC e Tablet */
-}
-
-/* Estilos para o menu principal e submenu */
-#site-header .menuu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-#site-header .menuu li {
-    margin-right: 20px;
-    position: relative; /* Para o submenu */
-}
-
-#site-header .menuu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#site-header .menuu a:hover {
-    color: #4ea9d3; /* Cor alternativa quando hover */
-}
-
-/* Estilos para o submenu */
-#site-header .menuu .submenu {
+header .logo{
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #de933b;
-    display: none;
+    min-width: 30px;
+    max-width: 70px;
+    right: 20%;
+    top: 7px;
 }
 
-#site-header .menuu li:hover .submenu {
+.logo a:hover {
     display: block;
 }
 
-#site-header .submenu li {
-    margin: 0;
-}
-
-#site-header .submenu a {
-    color: #fff; /* Cor do texto do submenu */
-    font-weight: normal;
-}
-
-#site-header .submenu a:hover {
-    color: #4ea9d3; /* Cor alternativa quando hover no submenu */
-}
-
-
-.cursor-pointer:hover {
-    cursor: url('cursor.cur'), auto;
-        }
-
-.direito {
-    font-size: small;
-}
-
-img:not(.logo) {
-    width: calc(75% - 0px); /* Utilizando calc para a largura */
-    height: auto;
-    max-width: 100%;
-}
-
-header .logo img, footer .logo img {
-    width: calc(35% - 0px); /* Utilizando calc para a largura */
-    height: auto;
-    max-width: none;
-    max-height: none;
-}
-
-/*header {
-    background-color: #de933b;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    transition: top 0.3s;
-    top: 0;
-    border-radius: 0 0 calc(10% + 0px) calc(10% + 0px); /* Utilizando calc para o raio da borda 
-    z-index: 1;
-}
-
-header .menu-icon {
+label {
     display: none;
+    cursor: pointer;
 }
 
-header .menuu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-header .menuu li {
+nav {
     margin-right: 20px;
 }
 
-header .menuu a {
-    text-decoration: none;
-    color: #fff;
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li, nav a {
+    padding: 10px;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
-header .menuu a:hover {
-    color: #4ea9d3;
-    cursor: url('cursor.cur'), auto;
-    transform: scale(1.1);
-}*/
-
-section {
-    margin: 50px 0;
-    padding: 10px;
-    border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
-}
-
-.hero {
-    position: relative;
-    width: 97%;
-    height: 300px;
-    overflow: hidden;    
-}
-
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.hero-image img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-}
-
-.hero-content h2 {
-    font-size: 2em;
-    text-align: left;
-    padding: 20px;
-}
-
-input, textarea {
-    color: black;
-}
-
-input::placeholder, textarea::placeholder {
-    color: #de933b;
-    font-weight: bolder;
-}
-
-.sobre {
-    width: 97%;
-    text-align: center;
-    margin: auto;
-}
-
-.sobre img{
-    width: auto;
-    border-radius: 20%;
-    border: 5px solid white;
-    margin: 0 0 10% 0;
-}
-
-.sobre p{
-    padding: 0 0 5% 3%;
-}
-
-.vantagens {
-    width: 97%;
-    /*text-align: center;*/
-    margin: auto;
-}
-
-.vantagens img{
-    width: auto;
-    border-radius: 20%;
-    border: 5px solid white;
-    margin: 0 0 10% 0;
-}
-
-.vantagens p{
-    padding: 0 0 5% 3%;
-}
-
-section .why {
-    padding: 10px 0 0 10px;
-    text-align: center;
-}
-
-.why h3{
-    padding: 3% 0 0 0;
-}
-
-.why p{
-    padding: 1% 0 2% 0;
-}
-
-.why img {
-    max-width: calc(75% - 0px); /* Utilizando calc para a largura */
-    height: auto;
-    border: 5px solid white;
-    border-radius: calc(15% + 0px); /* Utilizando calc para o raio da borda */
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
-
-.tarifa {
-    max-width: 100%;
-    text-align: center;
-}
-
-.tarifa{
-    margin: 5% 0;
-    text-align: center;
-}
-
-.tarifa img{
-    max-width: calc(75% - 0px); /* Utilizando calc para a largura */
-    height: auto;
-    border: 5px solid white;
-    border-radius: calc(15% + 0px); /* Utilizando calc para o raio da borda */
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
-
-.tarifa  ul {
-    padding-left: 0;
-  }
-.tarifa li {
-    list-style-position: inside;
-    text-align: center;
-  }
-
-.service {
-    text-align: center;
-    margin-top: 3%;
-}
-
-.service img {
-    max-width: calc(75% - 0px); /* Utilizando calc para a largura */
-    height: auto;
-    border: 5px solid white;
-    border-radius: calc(15% + 0px); /* Utilizando calc para o raio da borda */
-    object-fit: cover;
-    aspect-ratio: 1 / 1;
-}
-
-.service img:hover{
-    transform: scale(1.1);
-    transition: 0.8s;
-}
-
-.service h3{
-    padding: 3% 0 0 0;
-}
-
-.service p{
-    padding: 1% 0 2% 0;
-}
-
-.estrelas {
-    font-size: 24px;
-    color: #de933b;
-    cursor: url('cursor.cur'), auto;
-}
-
-.estrelas-avaliacao {
-    font-size: 24px;
-    color: #fdd835;
-}
-
-.faq .resposta {
-    display: none;
-}
-
-.faq .pergunta-titulo {
-    cursor: url('cursor.cur'), auto;
-    transition: transform 0.3s;
-    font-size: medium;
-}
-
-.faq .pergunta-titulo.clicada {
-    transform: translateX(calc(20px + 0px)); /* Utilizando calc para a transformação */
-}
-
-#contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contacte {
-    flex: 70%;
-    padding: 20px;
-}
-
-.horario {
-    flex: 30%;
-    padding: 20px;
-}
-
-.contacte form {
-    max-width: 500px;
-    padding: 20px;
-    border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
-}
-
-input {
-    border: 1px solid #ccc;
-}
-
-label, input, textarea {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
-}
-
-input::placeholder {
-    color: #de933b;
-    font-weight: bolder;
+nav a:hover {
+    background-color: var(--hover-bg-color);
+    border-radius: 25px;
 }
 
 button {
-    background-color: #de933b;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: var(--button-bg-color);
+    border: solid 3px var(--button-border-color);
+    border-radius: 7px;
+    padding: 10px;
+    transition: .3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--secondary-bg-color);
     border: none;
-    cursor: url('cursor.cur'), auto;
-    border-radius: calc(5px + 0px);
+    border: solid 3px var(--hover-border-color);
+    transform: scale(1.2); 
 }
 
-button:hover{
-    transform: scale(1.1);
+.carrossel {
+	position: relative;
+	display: flex;
+	width: 100dvw;
+	max-height: 90dvh;
+	overflow: hidden;
 }
 
-.botao-whatsapp {
-    display: inline-block;
-    background-color: #25d366;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: calc(5px + 0px); /* Utilizando calc para o raio da borda */
-    text-decoration: none;
+.carrossel button {
+	background-color: transparent;
+	color: var(--carrossel-button-color);
+	border: none;
+	font-size: 30px;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	border-radius: 20%;
+	transition: all .5s ease;
+	z-index: 10;
+}
+
+.carrossel button:hover {
+	background-color: var(--carrossel-hover-bg);
+	backdrop-filter: blur(10px);
+}
+
+.carrossel #proximoBtn {
+	right: 10px;
+}
+
+.carrossel #anteriorBtn {
+	left: 10px;
+}
+
+.carrossel .imagem {
+	position: relative;
+	width: 100%;
+	flex-shrink: 0;
+	transition: all 1s ease;
+}
+
+.carrossel .imagem img {
+	width: 100%;
+}
+
+section{
+    text-align: center;
+}
+
+.introducao {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+#nos {
+    margin-top: 10%;
+}
+
+.containere, .containerd {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.containere section, .containerd section {
+    width: 50%;
+}
+
+.containere img, .containerd img {
+    border: solid 5px var(--text-color);
+    border-radius: 10%;
+    width: 80%;
+}
+
+.containere p {
+    text-align: right;
+    margin: 5%;
+}
+
+.containerd p {
+    text-align: left;
+    margin: 5%;
+}
+
+.containere h1, .containerd h1 {
+    font-size: xx-large;
+}
+
+.containere h3, .containerd h3, .plano h3, .servicos h2 {
+    font-size: x-large;
+}
+
+.containere p, .containerd p, .containe h3, .plano p, .servicos p, #sobre p {
+    font-size: large;
+}
+
+.vantagens p, .vantagens h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.vantagens p {
+    padding: 20px;
+}
+
+.plano, .servicos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.plano section, .servicos section {
+    width: 25%;
+    margin: 50px;
+    text-align: center;
+}
+
+.plano img, .servicos img {
+    width: 90%;
+    border: solid 5px var(--text-color);
+    border-radius: 10%;
+}
+
+.servicos button {
+    margin: 5%;
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#sobre form {
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid var(--input-border-color);
+    width: 45%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input, textarea {
+    outline: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: var(--primary-bg-color);
     font-weight: bold;
-    transition: background-color 0.3s;
 }
 
-.botao-whatsapp i {
+input::placeholder, textarea::placeholder {
+    color: var(--placeholder-color);
+    font-weight: bolder;
+}
+
+#sobre section {
+    margin: 50px;
+}
+
+#sobre #p {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sobre button {
+    width: 70%;
+}
+
+footer {
+    background-color: var(--secondary-bg-color);
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer p {
+    font-size: medium;
+    margin: 15px;
+}
+
+.social ul {
+    list-style: none;
+    margin: 15px;
+}
+
+.social ul li {
+    display: inline-block;
     margin-right: 10px;
 }
 
-.botao-whatsapp:hover {
-    background-color: #128C7E;
-    cursor: url('cursor.cur'), auto;
-    transform: scale(1.1);
+.social i {
+    font-size: 25px;
 }
 
-.footer {
-    background-color: #de933b;
-    padding: 20px 0;
-    color: #fff;
-    text-align: center;
-}
-
-.footer .logo {
-    margin-bottom: 20px;
-}
-
-.footer .logo img {
-    max-width: 150px;
-    height: auto;
-}
-
-.footer .redes-sociais h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer .redes-sociais ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer .redes-sociais li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer .redes-sociais a {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Telefone */ /*
-@media screen and (max-width: 600px) {
-    header .logo img, footer .logo img {
-        width: calc(60% - 0px);
-        height: auto;
-        max-width: none;
-        max-height: none;
-    }
-
-    header .menuu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #de933b;
-        padding: 10px;
-        width: 50%;
-    }
-
-    header .menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: url('cursor.cur'), auto;
-        color: #fff;
-    }
-
-    header .menu-icon.open {
-        background-color: #de933b;
-        color: #fff;
-    }
-
-    header .menu-icon.open + .menuu {
-        display: block;
-    }
-
-    #home1{
-        margin-top: 100px;
-    }
-
-    #home{
-        text-align: center;
-        }
-    
-    .texto{
-        padding: 5%;
-        width: 40%;
-    }
-    
-    #home h1{
-        font-size: 35px;
-    }
-    
-    #home p{
-        font-size: 20px;
-    }
-
-    .foto{
-        padding: 5%;
-    }
-    
-    .foto img{
-        width:100%;
-        border-radius: 10%;
-        border: 5px solid white;
-        aspect-ratio: 1 / 1;
-    }
-    
-    .hero {
-        position: relative;
-        width: 93%;
-        height: 300px;
-        overflow: hidden;
-    }
-
-    .why img {
-        max-width: calc(50% - 0px);
-        height: auto;
-        border: 5px solid white;
-        border-radius: calc(15% + 0px);
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    .service img {
-        max-width: calc(50% - 0px);
-        height: auto;
-        border: 5px solid white;
-        border-radius: calc(15% + 0px);
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-}*/
-
-/* tablet */ 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    header {
-        padding: 20px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #home1{
-        margin-top: 100px;
-    }
-
-    #home{
-        margin-top: 100px;
-        text-align: center;
-        }
-
-    .texto{
-        width: 100%;
-        padding: 0;
-    }
-    
-    #home h1{
-        font-size: 45px;
-    }
-    
-    #home p{
-        font-size: 25px;
-    }
-    
-    .foto{
-        margin: 5%;
-    }
-    
-    .foto img{
-        width:100%;
-        border-radius: 10%;
-        border: 5px solid white;
-    }
-    
-
-    .why img {
-        max-width: calc(50% - 0px);
-        height: auto;
-        border: 5px solid white;
-        border-radius: calc(15% + 0px);
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    .vantagens{
-        text-align: center;
-    }
-
-    .tarifa {
-        max-width: 75%;
-        text-align: center;
-    }
-
-    .service img {
-        max-width: calc(50% - 0px);
-        height: auto;
-        border: 5px solid white;
-        border-radius: calc(15% + 0px);
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }   
-    
-}
-
-/* pc */ /*
-@media screen and (min-width: 1025px) {
-
-    body { 
-        width: 98%;
-    }
-    
-    section {
-        padding: 80px 20px;
-        border-radius: calc(5px + 0px);
-    }
-
-    #home {
-        padding: 0 20px;
-    }
-
-    #home{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        }
-    
-    .texto{
-        padding: 5%;
-        width: 80%;
-    }
-    
-    #home h1{
-        font-size: 45px;
-    }
-    
-    #home p{
-        font-size: 25px;
-    }
-    
-    .foto{
-        padding: 5%;
-        width: 100%;
-    }
-    
-    .foto img{
-        width:100%;
-        border-radius: 10%;
-        border: 5px solid white;
-    }
-
-    .hero-content h2 {
-        font-size: 5em;
-    }
-
-    .logo img {
-        width: 25%;
-        height: auto;
-    }
-
-    .why {
-        display: inline-block;
-        width: 20%;
-        margin: 1%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .why img {
-        max-width: 100%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-    }
-
-    .service {
-        display: inline-block;
-        width: 20%;
-        margin: 1%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .service img {
-        max-width: 100%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    #contact {
-        display: flex;
-    }
-
-    .contacte {
-        width: 70%;
-    }
-
-    .contacte #name, #email {
-        width: 45%;
-    }
-
-    .contacte #message {
-        width: 100%;
-        height: 100px;
-    }
-
-    .contacte input::placeholder {
-        color: black;
-    }
-
-    section {
-        margin: 50px 0;
-        padding: 10px;
-        border-radius: 5px;   
-    }
-
-    .hero {
-        position: relative;
-        width: 97%;
-        height: 300px;
-        overflow: hidden;
-    }
-
-    .hero-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-
-    .hero-image img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    .hero-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-    }
-
-    .hero-content h2 {
-        font-size: 2em;
-        text-align: left;
-        padding: 20px;
-    }
-
-    input::placeholder, textarea::placeholder {
-        color: #de933b;
-        font-weight: bolder;
-    }
-
-    section #whywe {
-        text-align: center;
-    }
-
-    .why img {
-        max-width: 75%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    section .service {
-        padding: 10px 0 0 10px;
-        text-align: center;
-    }
-
-    .service img {
-        max-width: 100%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    .estrelas {
-        font-size: 24px;
-        color: #de933b;
-        cursor: pointer;
-    }
-
-    .estrelas-avaliacao {
-        font-size: 24px;
-        color: #fdd835;
-    }
-
-    .faq .resposta {
-        display: none;
-    }
-
-    .faq .pergunta-titulo {
-        cursor: pointer;
-        transition: transform 0.3s;
-        font-size: medium;
-    }
-
-    .faq .pergunta-titulo.clicada {
-        transform: translateX(20px);
-    }
-    
-    #contact {
-        display: flex; 
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between; 
-        align-items: center; 
-    }
-
-    .contacte {
-        flex: 70%;
-        padding: 20px;
-    }
-
-    .horario {
-        flex: 30%;
-        padding: 20px;
-    }
-
-    .contacte form {
-            max-width: 500px;
-            padding: 20px;
-            border-radius: 5px;
-    }
-
-    input{
-        border: 1px solid #ccc;
-    }
-
-    label, input, textarea {
-        width: 90%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-    }
-
-    input::placeholder{
-        color: #de933b;
-        font-weight: bolder;
-    }
-
-    button {
-        background-color: #de933b;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .botao-whatsapp {
-        display: inline-block;
-        background-color: #25d366;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
-
-    .botao-whatsapp i {
-        margin-right: 10px;
-    }
-
-    .botao-whatsapp:hover {
-        background-color: #128C7E;
-    }
-
-    .footer {
-        background-color: #de933b;
-        padding: 20px 0;
-        color: #fff;
-        text-align: center;
-    }
-
-    .footer .logo {
-        margin-bottom: 20px;
-    }
-
-    .footer .logo img {
-        max-width: 150px;
-        height: auto;
-    }
-
-    .footer .redes-sociais h4 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    .footer .redes-sociais ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .footer .redes-sociais li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    .footer .redes-sociais a {
-        font-size: 24px;
-        color: #fff;
-        text-decoration: none;
-    }
-}*/
-
-/* Estilos específicos para telefones */ 
-@media screen and (max-width: 600px) {
-    
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
-
-    header .logo img, footer .logo img {
-        width: calc(60% - 0px);
-        height: auto;
-        max-width: none;
-        max-height: none;
-    }
-
-    header .menuu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #de933b;
-        padding: 10px;
-        width: 50%;
-    }
-
-    header .menu-icon {
-        display: block;
-        font-size: 24px;
-        cursor: url('cursor.cur'), auto;
-        color: #fff;
-    }
-
-    header .menu-icon.open {
-        background-color: #de933b;
-        color: #fff;
-    }
-
-    header .menu-icon.open + .menuu {
-        display: block;
-    }
-
-    #home1{
-        margin-top: 100px;
-    }
-
-    #home{
-        text-align: center;
-        }
-    
-    .texto{
-        margin-top: 15%;
-        width: 93%;
-    }
-    
-    #home h1{
-        font-size: 35px;
-    }
-    
-    #home p{
-        font-size: 20px;
-    }
-
-    .foto{
-        margin: 5% 0;
-        text-align: center;
-        width: 95%;
-    }
-    
-    .foto img{
-        width:100%;
-        border-radius: 10%;
-        border: 5px solid white;
-        aspect-ratio: 1 / 1;
-    }
-
-    .hero {
-        position: relative;
-        width: 93%;
-        height: 300px;
-        overflow: hidden;
-    }
-
-    .tarifa {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    #contact {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .contacte {
-        flex: 70%;
-        padding: 20px;
-    }
-    
-    .horario {
-        flex: 30%;
-        padding: 20px;
-    }
-    
-    .contacte form {
-        max-width: 90%;
-        padding: 20px;
-        border-radius: calc(5px + 0px);
-    }
-}
-
-/* PC */ 
-@media screen and (min-width: 1025px) {
-
-    section {
-        padding: 80px 20px;
-        border-radius: calc(5px + 0px);
-    }
-
-    #home {
-        padding: 0 20px;
-    }
-
-    #home{
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        }
-
-    #home h1{
-        font-size: 45px;
-        width: 93%;
-    }
-    
-    #home p{
-        font-size: 25px;
-    }
-
-    #home1{
-        margin: 3% 0 0 0;
-    }
-
-    #home1 h1{
-        font-size: 45px;
-    }
-
-    #home1 p{
-        font-size: 20px;
-    }
-
-    .hero{
-        margin: 0;
-        width: 97%;
-    }
-
-    .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    }
-
-    .hero-image img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .hero-content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        }
-
-    .hero-content h2 {
-        font-size: 5em;
-    }
-
-
-    .texto{
-        padding: 5%;
-        width: 80%;
-    }
-    
-    
-    .foto{
-        padding: 5%;
-        width: 100%;
-    }
-    
-    .foto img{
-        width:100%;
-        border-radius: 10%;
-        border: 5px solid white;
-    }
-
-    .logo img{
-        width: 25%;
-        height: auto;
-    }
-
-    article{
-        display: flex;
-        justify-content: center;
-    }
-
-    .why {
-        display: inline-block; 
-        width: 20%; 
-        margin: 1%; 
-        text-align: center; 
-        padding: 10px;
-    }
-
-    .why img {
-        max-width: 100%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-    }
-    
-    .vantagens{
-        text-align: center;
-        width: 75%;
-    }
-
-    .service {
-        display: inline-block; 
-        width: 20%; 
-        margin: 1%; 
-        text-align: center; 
-        padding: 10px;
-    }
-
-    .tarifa {
-    max-width: 25%;
-    text-align: center;
-    }
-    
-    .tarifa {
-        margin: 5% 5%;
-        text-align: center;
-    }
-
-    .service img {
-        max-width: 100%;
-        height: auto;
-        border: 5px solid white;
-        border-radius: 15%;
-        object-fit: cover;
-        aspect-ratio: 1 / 1;
-    }
-
-    #contact{
-        display: flex;
-    }
-
-    .contacte{
-        width: 70%;
-    }
-
-    .contacte #name, #email{
-        width: 45%;
-    }
-
-    .contacte #message{
-        width: 100%;
-        height: 100px;
-    }
-
-    .contacte input::placeholder{
-        color: black;
-    }
-
-    section{
-        margin: 0 5%;
-    }
+.social i:hover {
+    transform: scale(1.2);
 }
